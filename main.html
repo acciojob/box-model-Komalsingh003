@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Box Model - Traffic Lights</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model - Traffic Lights</title>
+
+    <style>
+        body {
+            background: white;
+        }
+
+        .container {
+            width: 350px;
+            padding: 20px;
+            background: #d9d9d9;
+            border-radius: 50px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .green, .yellow, .red {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .green {
+            background-color: rgb(0, 128, 0);
+        }
+
+        .yellow {
+            background-color: rgb(255, 255, 0);
+        }
+
+        .red {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
 </head>
+
 <body>
-<div class="container">
-<div class="green"></div>
-<div class="yellow"></div>
-<div class="red"></div>
-</div>
+    <div class="container">
+        <div class="green"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+    </div>
 </body>
 </html>
